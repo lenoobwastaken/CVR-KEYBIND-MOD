@@ -14,7 +14,7 @@ namespace CVRKeyBinds
 {
     public static class BuildInfo
     {
-        public const string Name = "CVRESP"; 
+        public const string Name = "CVRKB"; 
         public const string Description = "Mod for Testing"; 
         public const string Author = "Lenoob and CVRMG"; 
         public const string Company = "CVRMG"; 
