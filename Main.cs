@@ -1,4 +1,4 @@
-﻿using MelonLoader;
+using MelonLoader;
 using HarmonyLib;
 using UnityEngine;
 using ABI_RC.Core.Player;
@@ -26,11 +26,11 @@ namespace CVRKeyBinds
     {
         public override void OnApplicationStart()
         {
-            Console.ForegroundColor = ConsoleColor.DarkMagenta;
-            Console.WriteLine("\n CTRL + F to fly \n CTRL + LEFTCLICK to TP");
+            MelonLogger.Msg("\n CTRL + F to fly \n CTRL + LEFTCLICK to TP");
         }
         public override void OnUpdate()
         {
+           // if (Input.GetKeyDown(KeyCode.Space) && )
             if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.Mouse1))
             {
                 Ray r = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
